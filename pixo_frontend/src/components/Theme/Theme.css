@@ -1,0 +1,17 @@
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  .Themebtn{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(225, 224, 224);
+
+  }

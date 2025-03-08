@@ -1,0 +1,52 @@
+.main {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.mainContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.images{
+    border-radius: 10px;
+    transition:transform 0.3s ease-in-out;
+}
+
+.images:nth-child(3n) {
+    width: 250px;
+    height: 250px;
+}
+
+.images:nth-child(3n+1) {
+    width: 200px;
+    height: 300px;
+}
+
+.images:nth-child(3n+2) {
+    width: 300px;
+    height: 200px;
+}
+
+.images:hover {
+    transform: scale(0.9);
+}
+
+.images:hover{
+    transform: scale(0.9);
+}
+
+.imageName{
+    text-align: center;
+}
+
+

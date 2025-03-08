@@ -1,0 +1,13 @@
+.explore-button{
+    padding: 15px 30px;
+    background-color: #E60023;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .explore-button:hover{
+    background-color: #C7001D;
+  }
