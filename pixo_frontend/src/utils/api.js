@@ -1,7 +1,7 @@
 import axios from 'axios';
  
 const API = axios.create({
-  baseURL: "http://127.0.0.1:5000",
+  baseURL: "https://pixo-8v7o.onrender.com",
   withCredentials: true,
 });
 
@@ -70,7 +70,7 @@ export const logOut = () => {
 
   //admin 
   export const fetchAllPosts = async () => {
-    return await axios.get("http://127.0.0.1:5000/post/getAllPost", { withCredentials: true });
+    return await axios.get("https://pixo-8v7o.onrender.com/post/getAllPost", { withCredentials: true });
 };
 
 
@@ -80,7 +80,7 @@ export const deletePost = async (postId) => {
 
   try {
       const response = await axios.delete(
-          `http://127.0.0.1:5000/post/delete/${postId}`, 
+          `https://pixo-8v7o.onrender.com/post/delete/${postId}`, 
           {
               headers: {
                   Authorization: `Bearer ${token}`, // Add the token to the request header

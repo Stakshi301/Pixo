@@ -8,16 +8,16 @@ import { useNavigate } from "react-router-dom";
 const AdminDashboard = () => {
     const [posts, setPosts] = useState([]);
     const user = JSON.parse(localStorage.getItem("user"));
-    console.log("User from localStorage:", user); // ✅ Debug user data
+    console.log("User from localStorage:", user); 
 
     const isAdmin = user?.role === "admin";
-    console.log("Is Admin:", isAdmin); // ✅ Check if admin
+    console.log("Is Admin:", isAdmin); 
  const navigate=useNavigate();
     useEffect(() => {
         const getPosts = async () => {
             try {
                 const response = await fetchAllPosts();
-                console.log("Fetched Posts:", response.data); // ✅ Log fetched posts
+                console.log("Fetched Posts:", response.data); 
                 setPosts(response.data);
             } catch (error) {
                 console.error("Error fetching posts:", error);

@@ -33,9 +33,9 @@ const Login = () => {
             }
             const user = response.user;
             if (user.role === "admin") {
-                navigate("/admin-dashboard"); // Redirect admin
+                navigate("/admin-dashboard"); // redirect admin
             } else {
-                navigate("/dashboard"); // Redirect normal users
+                navigate("/dashboard"); // redirect users
             }
     
         } catch (error) {

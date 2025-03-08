@@ -11,15 +11,15 @@ const MainPage = () => {
   useEffect(() => {
     const getPosts = async () => {
       try {
-        const predefinedPosts = await fetchProducts ();  // API call to /products
-        const userPostsResponse = await getAllPost(); // API call to /post/getAllPost
-        const userPosts = userPostsResponse.data; // Extract actual data
+        const predefinedPosts = await fetchProducts ();  
+        const userPostsResponse = await getAllPost(); 
+        const userPosts = userPostsResponse.data; 
 
-        const mergedPosts = [...userPosts, ...predefinedPosts]; // Merge both arrays
+        const mergedPosts = [...userPosts, ...predefinedPosts]; // merge arr
 
-        console.log("User Posts:", userPosts); // ✅ Debugging
-        console.log("Predefined Posts:", predefinedPosts); // ✅ Debugging
-        console.log("Merged Posts:", mergedPosts); // ✅ Debugging
+        console.log("User Posts:", userPosts); 
+        console.log("Predefined Posts:", predefinedPosts);
+        console.log("Merged Posts:", mergedPosts); 
 
         setPosts(mergedPosts); // Set all posts
       } catch (error) {

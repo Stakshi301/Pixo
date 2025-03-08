@@ -13,7 +13,7 @@ const port=5000;
 connectDB();
 app.use(express.json()); 
 app.use(cors({
-          origin: true, 
+          origin: "https://pixo-8v7o.onrender.com", 
           credentials: true, 
         })
       ); 
