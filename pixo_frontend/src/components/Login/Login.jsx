@@ -71,7 +71,7 @@ const Login = () => {
                     <button type="button" className="back" onClick={handleBack}>Back</button>
                 </div>
 
-                <p>Don't have an account? <span style={{ color: "blue", cursor: "pointer" }} onClick={() => navigate("/signup")}>Sign Up</span></p>
+                <p>Don't have an account? <span style={{ color: "blue", cursor: "pointer" }} onClick={() => navigate("/Signup")}>Sign Up</span></p>
             </form>
         </div>
         </>
