@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../NavFoot/Navbar";
 import { Footer } from "../NavFoot/Footer";
 import "./MainPage.css";
-import { fetchProducts , getAllPost } from "../../utils/api"; // Import both APIs
+import { fetchProducts , getAllPost } from "../../utils/api"; // import both apis
 
 const MainPage = () => {
   const [posts, setPosts] = useState([]);
@@ -21,7 +21,7 @@ const MainPage = () => {
         console.log("Predefined Posts:", predefinedPosts);
         console.log("Merged Posts:", mergedPosts); 
 
-        setPosts(mergedPosts); // Set all posts
+        setPosts(mergedPosts); // set all posts
       } catch (error) {
         console.error("Error fetching posts:", error);
       }
@@ -47,7 +47,7 @@ const MainPage = () => {
               </div>
             ))
           ) : (
-            <p>No posts found.</p>
+            <p>Loading...</p>
           )}
         </div>
         <Footer />
